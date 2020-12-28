@@ -26,7 +26,7 @@ app.post("/upload", async (req, res)=>{
 
 	try{
 
-		cloudinary.uploader.upload(data.image, (err, result)=>{
+		await cloudinary.uploader.upload(data.image, (err, result)=>{
 			if(err){
 				res.status(400).json({ 
 					success: false,
