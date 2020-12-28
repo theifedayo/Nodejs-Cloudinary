@@ -31,6 +31,26 @@ image name is the name of image placed in the images folder
 	-H   "Content-Type: application/json"
 	-d   '{ "image": "images/<image name>"}'
 	-X   POST
+## Success
+This is an example of 200 OK response.
+
+	{
+	    "success": true,
+	    "message": "Image uplaoded successfully",
+	    "data": {
+	        "asset_id": "ab8b290451caee59a606ce788fc91a9c",
+	        "public_id": "hmgx1nvokmifbbx38uri",
+	        "version": 1609181898,
+	        "version_id": "4cf2f560beb343a8958b3f7f8cab2000",
+	        "signature": "4837070bcf75ebd3ce778bd467cf24f24ffc9542",
+	        "width": 478,
+	        "height": 569,
+	        "format": "png",
+	        ....
+	        ...
+	}
+
+
 
 ## Errors
 The response for requests failure are rather simple. For now, only the server-side errors are handled.
